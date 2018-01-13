@@ -1,0 +1,378 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	background-color: #1B1A00;
+	font-family: 'Open Sans', sans-serif;
+}
+#ad {
+	width: 970px;
+	height: 90px;
+	box-sizing: content-box;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+h1 {
+	width: 20%;
+	float: left;
+}
+h2 {
+	color: #fff200;
+	font-size: 48px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+}
+h3 {
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+}
+header {
+	text-align: center;
+}
+header > #logo {
+	width: 25%;
+	animation-name: logo;
+	animation-duration: 0.5s;
+
+}
+@keyframes logo {
+	0% {
+		width: 25%;
+	}
+	50% {
+		width: 27%;
+	}
+	100% {
+		width: 25%;
+	}
+
+}
+footer {
+	text-align: center;
+	color: #777;
+	margin: 1% 2%;
+	font-size: 15px;
+}
+footer > p {
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+#link {
+	display: initial;
+	width: 30%;
+	padding: 0%;
+	margin: 0%;
+	height: 10px;
+}
+nav {
+	width: 100%;
+}
+nav > ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0%;
+	padding: 0%;
+}
+nav > ul >li {
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	transition: 0.3s;
+}
+nav > ul >li:hover {
+	background-color: #161600;
+}
+nav > ul >li:hover > a > h3 {
+	text-shadow: 10px 10px 5px black;
+}
+a:link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 2%;
+	text-decoration: none;
+}
+a#gototop /* Copyright (c) 2015 Lokesh Dhakar http://lokeshdhakar.com/projects/lightbox2/ */
+{
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   border-radius: 50%;
+   padding: 0;
+   opacity: 0.3;
+   width: 50px;
+   height: 50px;
+   transition: 0.3s;
+   background: url('img/arrow.png') no-repeat center center;
+}
+a#gototop:hover {
+	opacity: 0.7;
+	width: 55px;
+	height: 55px;
+}
+
+/* Oferta Auto-Klinika rybnik*/
+
+#oferta {
+	border-top: 5px solid #090900;
+	border-bottom: 5px solid #090900;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1% 0;
+	background-color: #101000;
+	text-align: center;
+}
+.ofertaitem {
+	width: 80%;
+	box-sizing: border-box;
+	margin: 4% auto;
+	padding: 3% 5%;
+	color: #aaa;
+	background-color: #090900;
+	text-align: justify;
+	-webkit-box-shadow: 3px 3px 15px #222222;
+	-ms-box-shadow: 3px 3px 15px #222222;
+	box-shadow: 3px 3px 15px #222222;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.caricon {
+	width: 50px;
+	margin: 0 15px
+}
+
+/*Kontakt oraz mapa Auto-Klinika Rybnik*/
+#kontakt{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1% 0;
+	background-color: #1B1A00;
+	text-align: center;
+}
+
+.localicon{
+	width: 40px;
+	margin: 20px 10px 0 15px;
+}
+#namiary {
+	width: 40%;
+	margin: 1% 3% 5% 7%;
+	background-color: #313019;
+	box-sizing: border-box;
+	padding: 2%;
+	float: left;
+	min-height: 600px;
+	-webkit-box-shadow: 3px 3px 15px #050505;
+	-ms-box-shadow: 3px 3px 15px #050505;
+	box-shadow: 3px 3px 15px #050505;
+}
+#namiary > ul {
+	color: #aaa;
+	font-size: 18px;
+	text-align: left;
+	line-height: 30px;
+	letter-spacing: 1px;
+	margin: 0 0 5% 5%;
+}
+#gmap {
+	width: 40%;
+	margin: 1% 3% 5% 3%;
+	background-color: #313019;
+	float: left;
+	padding: 0%;
+
+	-webkit-box-shadow: 3px 3px 15px #050505;
+	-ms-box-shadow: 3px 3px 15px #050505;
+	box-shadow: 3px 3px 15px #050505;
+}
+/* slider*/
+#gallerybox {
+	width: 100%;
+	background-color: #101000;
+	border-top: 5px solid #090900;
+	border-bottom: 5px solid #090900;
+	text-align: center;
+	padding: 2% 0;
+	margin: 0% auto;
+}
+#gallerybox > .ofertaitem {
+	text-align: center;
+}
+.jpgy {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	height: auto;
+	margin: 1%;
+	overflow: hidden;
+	transition: 0.5s;
+	opacity: 0.7;
+	-webkit-filter: grayscale(100%) ;
+	-moz-filter: grayscale(100%) ;
+	-o-filter: grayscale(100%) ;
+	-ms-filter: grayscale(100%) ;
+	filter: grayscale(100%) ;
+}
+.jpgy:hover {
+	transform: scale(1.05);
+	opacity: 1;
+	-webkit-filter: none;
+	-moz-filter:none;
+	-o-filter: none;
+	-ms-filter: none;
+	filter: none;
+}
+.jpgx {
+	display: inline-block;
+	width: 20%;
+	height: auto;
+	margin: 1%;
+	overflow: hidden;
+	transition: 0.5s;
+	opacity: 0.7;
+	text-align: center;
+	-webkit-filter: grayscale(100%) ;
+	-moz-filter: grayscale(100%) ;
+	-o-filter: grayscale(100%) ;
+	-ms-filter: grayscale(100%) ;
+	filter: grayscale(100%) ;
+}
+.jpgx:hover {
+	transform: scale(1.05);
+	opacity: 1;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-o-filter: none;
+	-ms-filter: none;
+	filter: none;
+}
+.ximg {
+	width: 100%;
+	height: auto;
+}
+.yimg {
+	width: 100%;
+	height: auto;
+}
+.galleryicon {
+	width: 64px;
+	margin: 4%;
+}
+
+
+@media only screen and (max-width: 960px) {
+
+
+header > #logo {
+	width: 30%;
+}
+nav > ul >li {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+}
+h3 {
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 18px;
+}
+h2 {
+	color: #fff200;
+	font-size: 28px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#namiary {
+	width: 70%;
+	background-color: #313019;
+	box-sizing: border-box;
+	padding: 2%;
+	min-height: 400px;
+	margin: 5% auto;
+	margin-left: 15%;
+	padding-left: 5%;
+	-webkit-box-shadow: 3px 3px 15px #050505;
+	-ms-box-shadow: 3px 3px 15px #050505;
+	box-shadow: 3px 3px 15px #050505;
+	text-align: center;
+}
+#namiary > ul {
+	color: #aaa;
+	font-size: 14px;
+	text-align: left;
+	line-height: 20px;
+	letter-spacing: 1px;
+	margin: 0 0 5% 5%;
+}
+#gmap {
+	width: 90%;
+	margin: 1% 5% 5% 5%;
+	background-color: #313019;
+	padding: 0%;
+	-webkit-box-shadow: 3px 3px 15px #050505;
+	-ms-box-shadow: 3px 3px 15px #050505;
+	box-shadow: 3px 3px 15px #050505;
+}
+iframe {
+	width: 100%;
+	height: 515px;
+}
+.localicon{
+	width: 20px;
+	margin: 20px 10px 0 15px;
+}
+.ofertaitem {
+	width: 90%;
+	box-sizing: border-box;
+	margin: 4% auto;
+	padding: 3% 5%;
+	color: #aaa;
+	background-color: #090900;
+	text-align: justify;
+	-webkit-box-shadow: 3px 3px 15px #222222;
+	-ms-box-shadow: 3px 3px 15px #222222;
+	box-shadow: 3px 3px 15px #222222;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.jpgy {
+	display: inline-block;
+	text-align: center;
+	width: 40%;
+	height: auto;
+	margin: 1%;
+	overflow: hidden;
+	transition: 0.5s;
+	opacity: 0.7;
+	-webkit-filter: grayscale(100%) ;
+	-moz-filter: grayscale(100%) ;
+	-o-filter: grayscale(100%) ;
+	-ms-filter: grayscale(100%) ;
+	filter: grayscale(100%) ;
+}
+.jpgx {
+	display: inline-block;
+	width: 40%;
+	height: auto;
+	margin: 1%;
+	overflow: hidden;
+	transition: 0.5s;
+	opacity: 0.7;
+	text-align: center;
+	-webkit-filter: grayscale(100%) ;
+	-moz-filter: grayscale(100%) ;
+	-o-filter: grayscale(100%) ;
+	-ms-filter: grayscale(100%) ;
+	filter: grayscale(100%) ;
+}
+iframe {
+	width: 100%;
+	 height: 400px;
+}
+}
