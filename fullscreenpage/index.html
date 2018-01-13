@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Full Screen Page</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Obrazy wykorzystane na stronie zostały pobrane ze strony pixabay.com oraz unsplash.com-->
+</head>
+
+<body>
+    <div id="tlo"></div>
+    <header>
+        <h1>Poznaj Tatry<br><small>... i daj się wciągnąć ich urokom!</small><br><a href="http://natatry.pl/" id="sprawdz" target="_blank" title="natatry.pl">Sprawdź</a></h1>
+
+        <img src="back.png" alt="Poprzednie obraz tatr" id="back">
+        <img src="forward.png" alt="Następny obraz tatr" id="forward">
+    </header>
+    
+    <div id="wznow">wznów odtwarzanie zdjęć<hr></div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+        var numer = 1;
+        var isAnimated = 1;
+        var wznowButton = document.getElementById("wznow");
+        var zatrzymanie;
+        document.querySelector('#tlo').style.backgroundImage = " url('tatry"+numer+".jpg')";
+        document.getElementById("forward").addEventListener("click", function(){
+            wznowButton.style.display = "block";
+            clearInterval(zatrzymanie);
+            if (!$("#tlo").is(':animated')) {
+            if(numer < 10)
+            numer++;
+            else numer = 1;
+            $("#tlo").fadeOut(700,function() {
+                document.querySelector('#tlo').style.backgroundImage = " url('tatry"+numer+".jpg')" }); 
+            $("#tlo").fadeIn(700); 
+            }
+        });
+          document.getElementById("back").addEventListener("click", function(){
+              wznowButton.style.display = "block";
+              if (!$("#tlo").is(':animated')) {
+            if(numer > 1 )
+            numer--;
+            else numer = 10;
+            $("#tlo").fadeOut(7000,function() {
+                document.querySelector('#tlo').style.backgroundImage = " url('tatry"+numer+".jpg')" }); 
+            $("#tlo").fadeIn(700);
+              }
+        });
+
+ document.getElementById("wznow").addEventListener("click", function(){
+     document.querySelector('#tlo').style.backgroundImage = " url('tatry"+numer+".jpg')";
+              wznowButton.innerHTML = "zaraz pojawi się kolejny slajd, miłego podziwiania pięknych tatr!<hr>";
+     zatrzymanie = setInterval(function() {
+         wznowButton.style.display = "none";
+         wznowButton.innerHTML = "wznów odtwarzanie zdjęć";
+    if (!$("#tlo").is(':animated')) {
+            if(numer < 10)
+            numer++;
+            else numer = 1;
+            $("#tlo").fadeOut(700,function() {
+                document.querySelector('#tlo').style.backgroundImage = " url('tatry"+numer+".jpg')" }); 
+            $("#tlo").fadeIn(700); 
+            }
+}, 10000);
+ });
+
+     
+     
+     zatrzymanie = setInterval(function() {
+    if (!$("#tlo").is(':animated')) {
+            if(numer < 10)
+            numer++;
+            else numer = 1;
+            $("#tlo").fadeOut(700,function() {
+                document.querySelector('#tlo').style.backgroundImage = " url('tatry"+numer+".jpg')" }); 
+            $("#tlo").fadeIn(700); 
+            }
+}, 10000);
+</script>
+</body>
+
+</html>

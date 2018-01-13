@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#tlo {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /*Photo by Marta Pawlik on Unsplash*/
+    background-size: cover;
+    background-position: center;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+
+}
+#wznow {
+    position: absolute;
+    display: none;
+    bottom: 0%;
+    text-align: center;
+    background-color: rgba(10,10,10,0.3);
+    color: white;
+    font-size: 1.2rem;
+    width: 50vw;
+    height: 30px;
+    transition: all 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px 25px 0px 0px;
+}
+#wznow:hover {
+    background-color: rgba(10,10,10,0.7);
+    cursor: pointer;
+    font-size: 1.4rem;
+    height: 80px;
+    width: 70vw;
+}
+hr {
+     margin: 0% 20%;
+    border: 1px solid rgba(100,100,100,0.7); 
+}
+    
+
+h1 {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 50%;
+    font-size: 5rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    text-align: center;
+    color: black;
+    width: 70%;
+    -webkit-text-shadow: 0px 0px 5px white;
+    -moz-text-shadow: 0px 0px 5px white;
+    -ms-text-shadow: 0px 0px 5px white;
+    text-shadow: 0px 0px 5px white;
+    text-transform: uppercase;
+    background-color: rgba(150,150,150,0.4);
+    transition: 0.5s;
+    border-radius: 30px;
+    font-weight: 300;
+}
+h1:hover {
+    background-color: rgba(150,150,150,0.7);
+}
+h1 small {
+    color: rgb(0,70,0);
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: none;
+}
+#sprawdz {
+    position: relative;
+    display: block;
+    left:50%;
+    margin-top: 4%;
+    transform: translateX(-50%);
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: none;
+    width: 250px;
+     background-color: rgba(200,200,200,0.3);
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin-bottom: 2%;
+}
+#sprawdz:hover {
+    background-color: rgba(0,70,0,0.5);
+}
+
+#back {
+    position: absolute; /*image from www.freepick.com*/
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    width: 40px;
+    padding: 1%;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+#back:hover {
+    background-color: rgba(150,150,150,0.4);
+    transition: 1s;
+}
+#forward {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    width: 40px;
+    padding: 1%;
+    border-radius: 100%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#forward:hover {
+    background-color: rgba(150,150,150,0.4);
+}
+
+
+
+
