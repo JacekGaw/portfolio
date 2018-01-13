@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neon Page</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="light-bulb.png">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <div id="boxtop"></div>
+    <div id="boxbottom"></div>
+    <div id="change">Zmień kolor!</div>
+    <div id="yourcolor"><span>Lub wypróbuj swój!<small> wpisz w kodzie szesnastkowym</small></span> <br>
+    <input type="text" id="twojkolor" value="Kolor tekstu">
+    <input type="text" id="twojcien" value="Kolor cienia">
+    <input type="submit" value="Wypróbuj!" id="wyslij">
+    </div>
+   <div id="neonboard">
+       <div id="neontext">
+           <ul>
+               <li class="name">j</li>
+               <li class="name">a</li>
+               <li class="name animated">c</li>
+               <li class="name">e</li>
+               <li class="name">k</li><br>
+               <li class="name">g</li>
+               <li class="name">a</li>
+               <li class="name animated">w</li>
+               <li class="name">l</li>
+               <li class="name">y</li>
+               <li class="name">t</li>
+               <li class="name">a</li><br>
+               <li class="name">.</li>
+               <li class="name">p</li>
+               <li class="name">l</li>
+           </ul>
+       </div>
+    </div>
+</header>
+   
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+var color = ["#ADFF2F", "#00FEFF", "#FF00FE", "#FEFF00", "#00ecff", "#ff00f4"];
+var colorOfShadow = ["#345501","#008788", "#880087", "#878800", "#007588", "#880090"];
+$(".name").css("color", color[0]);
+$(".name").css("text-shadow", "0px 0px 30px"+color[0]);
+$("#boxtop").css("background", "linear-gradient(0deg, "+colorOfShadow[0]+" 12%, black 60%");
+$("#boxbottom").css("background", "linear-gradient(180deg, "+colorOfShadow[0]+" 12%, black 60%");
+$("#change").css("color", color[0]);
+var numer = 1;
+    
+    change.addEventListener("click", function(){
+        $("input").css("color", color[numer]);
+        $("span").css("color", color[numer]);
+        $(".name").css("color", color[numer]);
+        $(".name").css("text-shadow", "0px 0px 30px"+color[numer]);
+        $("#boxtop").css("background", "linear-gradient(0deg, "+colorOfShadow[numer]+" 12%, black 60%");
+        $("#boxbottom").css("background", "linear-gradient(180deg, "+colorOfShadow[numer]+" 12%, black 60%");
+        $("#change").css("color", color[numer]);
+        if(numer+1 == color.length){
+            numer = 0;
+        }
+        else
+        numer++;
+    });
+    
+    $("#twojkolor").focusin(function(){
+        $("#twojkolor").attr("value", "");
+        $("#twojkolor").css("background-color", "#333");
+        $("#twojkolor").css("box-shadow", "0px 0px 10px #aaa");
+        
+    });
+     $("#twojcien").focusin(function(){
+        $("#twojcien").attr("value", "");
+        $("#twojcien").css("background-color", "#333");
+        $("#twojcien").css("box-shadow", "0px 0px 10px #aaa");
+    });
+     $("#twojkolor").focusout(function(){
+        $("#twojkolor").attr("value", "Wpisz kolor");
+        $("#twojkolor").css("background-color", "#222");
+        $("#twojkolor").css("box-shadow", "0px 0px 0px black");
+    });
+     $("#twojcien").focusout(function(){
+        $("#twojcien").attr("value", "Wpisz cień");
+        $("#twojcien").css("background-color", "#222");
+        $("#twojcien").css("box-shadow", "0px 0px 0px black");
+    });
+      $("#wyslij").focusin(function(){
+            $("#wyslij").css("background-color", "#333");
+            $("#wyslij").css("box-shadow", "0px 0px 10px #aaa");
+        });
+         $("#wyslij").focusout(function(){
+            $("#wyslij").css("background-color", "#222");
+            $("#wyslij").css("box-shadow", "0px 0px 0px black");
+        });
+    
+    document.getElementById("wyslij").addEventListener("click",function(){
+        var kolor = document.getElementById("twojkolor").value;
+        var cien = document.getElementById("twojcien").value;
+        if (kolor.length != 6 || cien.length != 6)
+            {
+                document.querySelector("span").innerHTML = "Musisz wpisać dokładnie 6 znaków w każdym polu";
+            }
+        kolor = "#"+kolor;
+        cien = "#"+cien;
+        $("input").css("color", kolor);
+        $("span").css("color", kolor);
+        $(".name").css("color", kolor);
+        $(".name").css("text-shadow", "0px 0px 30px"+kolor);
+        $("#boxtop").css("background", "linear-gradient(0deg, "+cien+" 12%, black 60%");
+        $("#boxbottom").css("background", "linear-gradient(180deg, "+cien+" 12%, black 60%");
+        $("#change").css("color", kolor);
+        $("#twojkolor").attr("value", "Wpisz kolor");
+        $("#twojcien").attr("value", "Wpisz cień");
+    });
+</script>   
+</body>
+</html>
