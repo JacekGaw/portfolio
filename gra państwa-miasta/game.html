@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>PAŃSTWA - MIASTA</title>
+	<link rel="Shortcut icon" href="images/icon.png" />
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/e3c53b3106.js"></script>
+	<script  src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylegame.css">
+</head>
+<body>
+
+<div class="page-header">
+  <h1><a href="index.html">PAŃSTWA - MIASTA</a> <small style="color: black;">zagraj w grę dzieciństwa!</small></h1>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-2 aside">
+  		<p></p>
+  		<div id="playerOneName">Gracz 1</div>
+  		<button type="button" class="btn btn-my btn-aside" onclick="playerOnePkt()">Dodaj punkt</button>
+  </div>
+
+
+  <div class="col-xs-12 col-sm-8 mid">
+  		<div id="round"></div>
+  		<button type="button" class="btn btn-my" onclick="losowanieKategorii()">Losuj kategorię!</button><div id="kategoria"></div>
+  		<button type="button" class="btn btn-my" onclick="losowanieLitery()">Losuj literę!</button><div id="litera"></div>
+  		<h3>Teraz może odpowiadać:</h3><br>
+  		<div id="whoTalk"></div>
+  		<div id="bottombuttons">
+  		<button type="button" class="btn btn-my" id="nextround" onclick="nextRound()">Przejdź do następnej rundy</button>
+  		<button type="button" class="btn btn-my" id="newgame" onclick="newGame()">Graj od nowa</button>
+  		</div>
+  </div>
+
+
+  <div class="col-xs-12 col-sm-2 aside">
+  		<p></p>
+  		<div id="playerTwoName">Gracz 2</div>
+  		<button type="button" class="btn btn-my btn-aside" onclick="playerTwoPkt()">Dodaj punkt</button>
+  </div>
+</div>
+
+<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-xs-12 col-sm-8 mid">
+			<h2>
+				Pamiętaj!
+			</h2>
+			<div id="playerOneNameKlawisz" class="name">Gracz 1</div>
+			<div id="playerTwoNameKlawisz" class="name">Gracz 2</div>
+			<img src="images/klawisz-a.jpg">
+			<img src="images/klawisz-l.jpg">
+			<div class="col-sm-2"></div>
+</div>
+
+<footer><h3>@All rights reserved. Writen by Jacek Gawlyta@</h3></footer>
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

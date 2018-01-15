@@ -1,0 +1,224 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	font-family: 'Amatic SC', cursive;
+	height:auto;
+	width: 100%;
+	
+}
+body {
+	background-image: url('images/worldmap.jpg');
+	background-position: right;
+	background-attachment: fixed;
+}
+h1 {
+	text-align: center;
+	font-size: 500%;
+	font-weight: 700;
+	color: white;
+	width: 100%;
+}
+small {
+	text-shadow: none;
+}
+a {
+	transition: 1s;
+	color: white;
+	text-shadow: #444444 2px 4px 6px;
+	outline: none;
+}
+a:hover {
+	transition: 1s;
+	text-decoration: none;
+	color: #dddddd;
+	text-shadow: #111111 2px 4px 8px;
+	outline: none;
+}
+.row {
+	margin: 0%;
+	background-color: rgba(183,201,151,0.5);
+	height: 100%;
+}
+.page-header {
+	height: auto;
+	margin: 0%;
+	border: 0%;
+	background-color: #709330;
+	float: left;
+}
+.mid {
+	padding: 2% 2% 2% 2%;
+	background-color: rgba(169,190,130,0.7);
+}
+.mid > h3 {
+	text-align: center;
+	font-size: 200%;
+	font-weight: 700;
+}
+.aside {
+	padding:3%;
+	height: 100%;
+
+}
+.aside > p{
+	font-size: 1300%;
+	color: black;
+	font-weight: 700;
+	text-align: center;
+}
+.aside > #playerOneName{
+	font-size: 300%;
+	color: black;
+	font-weight: 700;
+	text-align: center;
+}
+.aside > #playerTwoName{
+	font-size: 300%;
+	color: black;
+	font-weight: 700;
+	text-align: center;
+}
+#round {
+	font-size: 200%;
+	font-weight: 700;
+	text-align: center;
+}
+#kategoria {
+	font-size: 300%;
+	font-weight: 700;
+	width: 75%;
+}
+#litera {
+	font-size: 300%;
+	font-weight: 700;
+	width: 75%;
+	margin: 0%;
+}
+.btn-my {
+	float: left;
+	width: 20%;
+	font-size: 150%;
+	background-color: #709330;
+	border: 0px;
+	margin: 1% 5% 0% 0%;
+	color: white;
+	box-shadow: #333333 2px 2px 10px;
+	transition: 0.3s;
+}
+.btn-my:hover {
+	transition: 0.3s;
+	background-color: #597526;
+	color: white;
+	box-shadow: black 4px 4px 6px;
+}
+.btn-aside {
+	width: 100%;
+	font-size: 150%;
+}
+#whoTalk {
+	text-align: center;
+	font-weight: 700;
+	color: #709330;
+	color: white;
+	font-size: 500%;
+}
+#nextround {
+	width: 50%;
+	float: none;
+	margin: 2% 25%;
+}
+#newgame {
+	float: none;
+	width: 50%;
+	margin: 0% 25% 2% 25%;
+}
+h2 {
+	text-align: center;
+	font-size: 300%;
+	font-weight: 700;
+	width: 100%;
+}
+.mid > .name {
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 300%;
+	font-weight: 700;
+}
+.mid > img {
+	width: 50%;
+	padding: 2% 20%;
+	float: left;
+}
+footer {
+	position: fixed;
+	top: 93%;
+	height:1%;
+	float: left;
+	color: black;
+	font-weight: 700;
+	font-size: 150%;
+	margin: 0%;
+}
+@media only screen and (max-width: 768px) {
+	h1 {
+	text-align: center;
+	font-size: 350%;
+	font-weight: 700;
+	color: white;
+	width: 100%;
+}
+}
+
+@media only screen and (max-width: 992px) {
+	.aside {
+	padding:1%;
+	}
+	.aside > p{
+	font-size: 500%;
+	color: black;
+	font-weight: 700;
+	text-align: center;
+	}
+	.aside > #playerOneName{
+	font-size: 200%;
+	color: black;
+	font-weight: 700;
+	text-align: center;
+	}
+	.aside > #playerTwoName{
+	font-size: 200%;
+	color: black;
+	font-weight: 700;
+	text-align: center;
+	}
+	#bottombuttons {
+		text-align: center;
+	}
+	#nextround {
+	width: 80%;
+	margin: 1%;
+	}
+	#newgame {
+	width: 80%;
+	margin: 1%;
+	}
+	.btn-my {
+	float: left;
+	width: 20%;
+	font-size: 100%;
+	background-color: #709330;
+	border: 0px;
+	margin: 1% 5% 3% 0%;
+	color: white;
+	}
+	.btn-aside {
+	width: 100%;
+	font-size: 150%;
+	}
+	.mid > img {
+	width: 50%;
+	padding: 2% 15%;
+	float: left;
+}
+}

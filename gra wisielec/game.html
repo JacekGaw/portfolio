@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>
+	</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/2b888b8086.js"></script>
+	<script  src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Life+Savers:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body onload="wypiszLitery()">
+
+<div id="container">
+<h1><a href="index.html">Wisielec</a></h1>
+<div class="container">
+	<div id="kategorie">
+	<h2>Kategorie:</h2>
+	<button onclick="przyslowie(0)">Przysłowie</button>
+	<!--Geografia-->
+			<div class="btn-group button">
+				<button type="button" class="btn btn-default dropdown-toggle button" data-toggle="dropdown">
+				Geografia <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				 	<li onclick="panstwa(0)">Państwa</li>
+				    <li onclick="morza(1)">Morza</li>
+				    <li onclick="stolice(2)">Stolice</li>
+				    <li onclick="parkiNarodowe(3)">Parki narodowe</li>
+				    <li onclick="wojewodztwa(4)">Województwa</li>
+				</ul>
+			</div>
+<!--Chemia-->
+			<div class="btn-group button">
+				<button type="button" class="btn btn-default dropdown-toggle button" data-toggle="dropdown">
+				Chemia <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				 	<li onclick="pierwiastki(5)">Pierwiastki</li>
+				 	<li onclick="sprzetLabo(6)">Sprzęt laboratoryjny</li>
+				</ul>
+			</div>
+<!--Samochody-->
+			<div class="btn-group button">
+				<button type="button" class="btn btn-default dropdown-toggle button" data-toggle="dropdown">
+				Samochody <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				 	<li onclick="markaAut(7)">Marki</li>
+				 	<li onclick="modelAut(8)">Modele</li>
+				</ul>
+			</div>
+<!-- Człowiek-->
+			<div class="btn-group button">
+				<button type="button" class="btn btn-default dropdown-toggle button" data-toggle="dropdown">
+				Człowiek <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+				 	<li onclick="kosci(9)">Kości</li>
+				 	<li onclick="miesnie(10)">Mięśnie</li>
+				</ul>
+			</div>
+
+</div>
+</div>
+<div class="container">
+<div id="kategoria">Kategoria:</div>
+<div id="losowaneslowo"></div>
+<div id="litery" class="col-xs-12 col-sm-6"></div>
+<div id="szubienica" class="col-xs-12 col-sm-6"></div>
+</div>
+</div>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+<!--<canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
+</canvas>-->

@@ -1,0 +1,56 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+body {
+	font-family: 'Life Savers', cursive;
+	background-image: url('images/background2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.row {
+	margin: 0%;
+	padding: 0% 5%;
+}
+h1 {
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-size: 1000%;
+	margin: 4% auto 2% auto;
+	text-shadow: #4F0D12 4px 6px 16px;
+}
+.asidetext {
+	background-color: rgba(20,20,20,0.6);
+	color: #aaaaaa;
+	text-align: justify;
+	padding: 2% 4%;
+}
+.asidetext > h2 {
+	text-align: center;
+}
+.fa-arrow-right {
+	color: #888888;
+}
+#game {
+	text-align: right;
+	margin: 3% 3% 5% auto;
+}
+a {
+	background-color: rgba(20,20,20,0.6);
+	text-align: center;
+	color: #888888;
+	font-size: 200%;
+	padding: 1%;
+	box-shadow: #4F0D12 2px 2px 6px;
+	transition: 0.3s;
+}
+a:hover {
+	transition: 0.3s;
+	background: rgba(79,13,18,0.6);
+	box-shadow: black 3px 3px 6px;
+	color: black;
+	text-decoration: none;
+	margin-right: 0.5%;
+}

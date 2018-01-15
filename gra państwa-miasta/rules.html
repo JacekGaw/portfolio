@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>PAŃSTWA - MIASTA</title>
+	<link rel="Shortcut icon" href="images/icon.png" />
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://use.fontawesome.com/400450ffe4.js"></script>
+	<script  src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylerules.css">
+</head>
+<body>
+
+<div class="page-header">
+   <h1><a href="index.html">PAŃSTWA - MIASTA</a> <small style="color: black;">zagraj w grę dzieciństwa!</small></h1>
+</div>
+<div id="container">
+	<div class="row">
+  		<div class="col-xs-12 col-md-6"><h2>Opis poszczególnych elementów gry.</h2><hr>
+  		<p>Gra <strong>"Państwa - Miasta"</strong> jest wykonana w html, css oraz javascript.
+  		Projekt został stworzony wyłącznie w celach naukowych i na własny użytek. Jest to jednak własność prywatna
+  		więc wszelkie <strong>kopiowanie i publikacje bez zgody autora są surowo zabronione</strong>. Dokładna informacja znajduje się ponieżej.</p>
+  		<p>Na początku wchodząc do gry, u góry przeglądarki ukazuje nam się <strong>okno dialogowe</strong>. Wpisujemy nazwy dla dwójki graczy, po czym zostajemy przekierowani do głownego panelu gry.
+  		Po stronie lewej i prawej widzimy teraz stan punktów poszczególnych graczy. Możemy zmieniać wartość liczbową korzystając z przycisku <strong>"dodaj punkt"</strong>.</p>
+  		<p>W części środkowej wybieramy kategorię klikając w odpowiedni przycisk oraz wybieramy literę. <strong>Wylosowana litera ukazuję się po 2 sekundach</strong>, po których wystąpi również dźwięk wystrzału.</p>
+  		<p><strong>Dla gracza pierwszego przypisany jest klawisz "A" na klawiaturze, a dla gracza drugiego przypisany przycisk to "L"</strong>. Po wciśnięciu któregoś z nich, na ekranie zostaje wyświetlona nazwa gracza, który nacisnął jaką pierwszy. Wtedy też startuje<strong> stoper, który odlicza 3 sekundy</strong>. Koniec czasu zostaje oznajmiony syreną.</p>
+  		<p>Klikając <strong>"Przejdź do następnej rundy"</strong> nie kasujemy dostychczasowego wyniku punktowego. Kasuje się natomiast kategoria, wylosowana litera oraz nazwa gracza, który ma udzielać odpowiedzi. U góry pojawia nam się informacja o <strong>numerze rundy</strong>.</p>
+  		<p>Klikając <strong>"Graj od nowa"</strong> kasują nam się: punkty graczy, kategoria, wylosowana litera, nazwa gracza, który ma udzielić odpowiedzi oraz licznik ukazujący numer rundy. Ponownie zostaje wyświetlone <strong>okno dialogowe</strong>, w którym wpisujemy nazwy nowych graczy.</p><br><br>
+  		</div>
+  		<div class="col-xs-12 col-md-6"><h2>Jak grać? Opis i zasady gry.</h2><hr>
+  		<h3><strong>Kategorie:</strong></h3>
+  		<p>Gracze biorący udział w grze mogą zmierzyć się w dziewięciu wybieranych losowo kategoriach: rzecz, imię, państwo, miasto, zwierzę, roślina, samochód, zawód, kolor, rzeka, sport.</p>
+  		<h3><strong>Losowane litery:</strong></h3>
+  		<p>Litery możliwe do wylosowania to: A,B,C,D,E,F,G,H,I,J,K,L,Ł,M,N,O,P,R,S,Ś,T,U,W,Y,Z,Ź,Ż</p>
+  		<h3><strong>Zasady gry:</strong></h3>
+  		<ol>
+  			<li>W grze może brać udział maksymalnie dwóch graczy. Nie ma ograniczenia wiekowego.</li>
+  			<li>Gra nie ma ustalonego limitu rund, gra toczy się do czasu kiedy gracze zechcą.</li>
+  			<li>Gra nie ma możliwości sprawdzenia czy udzielone odpowiedzi są poprawne. Sprawdzamy uczciwie we własnym zakresie korzystając z dostępnych źródeł takich jak encyklopedia, internet lub inne źródła wiedzy.</li>
+  			<li>Gracze sami dodają sobie punkty korzystając z dostępnych przycisków.</li>
+  			<li>Udzielenie odpowiedzi musi zawrzeć się w czasie 3 sekund i przed sygnałem oznaczającym koniec czasu. Nie udzielenie odpowiedzi w wyznaczonym czasie pozwala drugiemu graczowi punkt na jego konto.</li>
+  			<li>Punkty można otrzymać za: 
+  				<ul>
+  					<li>Udzielenie poprawnej odpowiedzi (1pkt.).</li>
+  					<li>udzielenie złej odpowiedzi przez przeciwnika (1pkt).</li>
+  					<li>nie udzielenie odpowiedzi przez przeciwnika, lub udzielenie jej po czasie (1pkt.).</li>
+  				</ul>
+  				Można dodawać tylko po jednym punkcie. Dodanie 2 lub więcej punktów w jednej rundzie jest działaniem nieuczciwym wobec drugiego gracza.
+  			</li>
+  			<li>Prawo do udzielenia odpowiedzi ma jedynie osoba, która zareagowała szybciej, czyli której nazwa wyświetli się na ekranie gry.</li>
+  			<li>Wygrywa osoba, która po określonym wcześniej przez graczy czasie gry, ma najwięcej punktów na swoim koncie.</li>
+  		</ol><br><br>
+  		</div>
+	</div>
+	<div class="row">
+  		<div class="col-xs-12 col-md-8"><h2>O autorze słów kilka.</h2><hr>
+  		<p>Nazywam się Jacek Gawlyta. Nad stronami internetowymi pracuję od około 2016 roku. Z javascriptem zaprzyjaźniłem się jakiś czas temu. Wciąż uczeń technikum na profilu informatycznym. Poza informatyką kręci mnie akwarystyka oraz w miarę możliwości finansowych chodzenie po górach. </p>
+  		<p>Strona ta powstała głównie w celach utwalenia zagadnień związanych z tym językiem oraz do nabrania jakiegokolwiek doświadczenia przy tworzeniu tego typu projektów. Główną inspiracją była gra "Państwa - Miasta" wydana w werski fizycznej. Jako iż do rozgrywki tej podchodzę z sentymentem i miłymi wspomnieniami, postanowiłem w jakimś stopniu odtworzyć ją tutaj.</p><br>
+  		<h3 id="stopfloat"><strong>Mam nadzieję, że miło spędzicie tutaj czas.</strong></h3><br>
+  		<p>Jeśli chcesz dowiedzieć się o mnie więcej, pisz jac.gawlyta@gmail.com:</p>
+  		<p>Lub odwiedź mnie na jednym z portali społecznościowych..</p>
+  		<br><br>
+  		</div> 
+  		<div class="col-xs-12 col-md-4"><h2>Prawa autorskie.</h2><hr>
+  		<p>Wszelkie treści zamieszczone na tej stronie internetowej (teksty, zdjęcia itp.) podlegają ochronie prawnej na podstawie przepisów ustawy z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych (tekst jednolity z 2006 r., Dz.U. nr 90, poz. 631 z późn. zm.). Bez zgody autora zabronione jest m.in. powielanie treści, ich kopiowanie, przedruk, przechowywanie i przetwarzanie z zastosowaniem jakichkolwiek środków elektronicznych, zarówno w całości, jak i w części.
+Zabronione jest dalsze rozpowszechnianie, o którym mowa w art. 25 ust. 1 pkt b ustawy z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych.</p>
+  		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="socialmedia">
+      <hr>
+  			<a href="https://www.facebook.com/jacek.gawlyta"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+  			<a href="https://www.instagram.com/jotjotowski/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  			<a href="https://www.linkedin.com/in/jacek-gawlyta/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a><br>
+  		</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<footer>@All rights reserved. Writen by Jacek Gawlyta@</footer>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

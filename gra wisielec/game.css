@@ -1,0 +1,231 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+body {
+	font-family: 'Life Savers', cursive;
+	background-image: url('images/background2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+h1 {
+	text-align: left;
+	color: white;
+	font-weight: 700;
+	font-size: 500%;
+	margin: 2% 2%;
+	text-shadow: #4F0D12 4px 6px 16px;
+}
+a {
+	transition: 0.3s;
+	color: white;
+}
+a:hover {
+	transition: 0.3s;
+	text-decoration: none;
+	color: white;
+	margin: 0.5%;
+	text-shadow: #BC3440 4px 6px 16px;;
+}
+button {
+	width: 30%;
+	padding: 1% 1%;
+	margin: 1%;
+	background-color: rgba(20,20,20,0.6);
+	color: white;
+	border: none;
+	box-shadow: #4F0D12 1px 1px 6px;
+	outline: none;
+	transition: 0.3s;
+	font-size: 150%;
+}
+button:hover {
+	padding: 1% 1%;
+	margin: 1%;
+	background: rgba(79,13,18,0.6);
+	box-shadow: black 3px 3px 6px;
+	color: white;
+	border: none;
+	transition: 0.3s;
+	outline: none;
+}
+.button {
+	width: 30%;
+	margin: 1%;
+	padding: 0.2%;
+	background-color: rgba(20,20,20,0.6);
+	color: white;
+	border: none;
+	box-shadow: #4F0D12 1px 1px 6px;
+	outline: none;
+	transition: 0.3s;
+}
+.button:hover {
+	margin: 1%;
+	padding: 0.2%;
+	background: rgba(79,13,18,0.6);
+	box-shadow: black 3px 3px 6px;
+	color: white;
+	border: none;
+	transition: 0.3s;
+	outline: none;
+}
+.button > button {
+	padding: 2%;
+	width: 100%;
+	background-color: rgba(20,20,20,0.6);
+	color: white;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	transition: 0.3s;
+	font-size: 150%;
+
+}
+.button > button:hover {
+	padding: 2%;
+	background: rgba(79,13,18,0.6);
+	box-shadow: none;
+	color: white;
+	border: none;
+	transition: 0.3s;
+	outline: none;
+}
+.dropdown-menu {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(20,20,20,0.6);
+	color: white;
+	transition: 0.3s;
+}
+.dropdown-menu > li {
+	font-size: 120%;
+}
+.dropdown-menu > li:hover {
+	width: 100%;
+	text-align: center;
+	background: rgba(79,13,18,0.6);
+	box-shadow: black 3px 3px 6px;
+	color: white;
+	text-decoration: underline;
+	cursor: pointer;
+	transition: 0.3s;
+}
+input {
+	width: 20%;
+	padding: 1% 1%;
+	margin: 1%;
+	background-color: rgba(20,20,20,0.6);
+	color: white;
+	border: none;
+	box-shadow: #4F0D12 1px 1px 6px;
+	outline: none;
+	transition: 0.3s;
+}
+input:hover {
+	padding: 1% 1%;
+	margin: 1%;
+	background: rgba(79,13,18,0.6);
+	box-shadow: black 3px 3px 6px;
+	color: white;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+}
+form {
+	width: 20%;
+	padding: 1% 0.5%;
+	margin: 1%;
+	background-color: rgba(20,20,20,0.6);
+	color: white;
+	border: none;
+	box-shadow: #4F0D12 1px 1px 6px;
+	outline: none;
+	transition: 0.3s;
+}
+form:hover {
+	background: rgba(79,13,18,0.6);
+	box-shadow: black 3px 3px 6px;
+	transition: 0.3s;
+}
+select {
+	width: 50%;
+	margin: 1%;
+	background-color: rgba(20,20,20,0.6);
+	color: white;
+	border: none;
+	box-shadow: #4F0D12 1px 1px 6px;
+	outline: none;
+	transition: 0.3s;
+}
+select:hover {
+	background: rgba(79,13,18,0.6);
+	box-shadow: black 3px 3px 6px;
+	transition: 0.3s;
+}
+
+#litery {
+	float: left;
+}
+#litery > button {
+	width: 80%;
+	font-size: 50%;
+	background-color: rgba(20,20,20,0.9);
+	transition: 0.5s;
+}
+#litery > button:hover {
+	background: rgba(79,13,18,0.9);
+	font-size: 55%;
+	transition: 0.5s;
+}
+#kategoria {
+	color: white;
+	font-size: 150%;
+}
+#szubienica >img {
+	width: 100%;
+	height: auto;
+}
+.container {
+	text-align: center;
+	background-color: rgba(20,20,20,0.6);
+	padding: 2%;
+	margin-bottom: 2%;
+}
+.goodanswer {
+	background-color: #1e7816;
+	color: grey;
+	cursor: default;
+}
+.wronganswer {
+	background-color: #940d0d;
+	color: grey;
+	cursor: default;
+}
+.goodanswer:hover {
+	background-color: #1e7816;
+	color: grey;
+	cursor: default;
+	box-shadow: #4F0D12 1px 1px 6px;
+}
+.wronganswer:hover {
+	background-color: #940d0d;
+	color: grey;
+	cursor: default;
+	box-shadow: #4F0D12 1px 1px 6px;
+}
+.win {
+	color: #aaaaaa;
+	font-size: 300%;
+	padding-top: 10%;
+}
+.col-sm-6 {
+	float: left;
+}
+#losowaneslowo {
+	font-size: 500%;
+	color: #aaaaaa;
+	letter-spacing: 10px;
+	min-height: 100px;
+}
