@@ -1,2 +1,2 @@
-# portfolio
-My projects
+# Moje projekty
+
